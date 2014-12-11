@@ -16,4 +16,16 @@ def checktitle(browser)
    
 end
 
+def checkcolor(browser)
+
+#  open the color option from the left panel 
+  puts "Inside checkcolor"
+  browser.li(:id,'accordion-section-colors').h3(:class,'accordion-section-title').click
+# select color 
+
+  browser.div(:class,'wp-picker-container').a(:class,'wp-color-result').click
+
+  sleep(5)
+end
+
 end 

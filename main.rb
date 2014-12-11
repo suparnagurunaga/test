@@ -24,8 +24,10 @@ Login.cust(browser)
 # go to the custom page 
 c= Customp.new(browser,ipaddress)
 c.checktitle(browser)
+c.checkcolor(browser)
+sleep(3)
 
-#`browser.close
+#browser.close
 Login.dest(browser)
 
 puts "starting execution 3"
