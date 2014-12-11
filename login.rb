@@ -22,12 +22,14 @@ module Login
 
 # module to login 
 
-  def self.login11(user,password,browser)
+  def self.login11(user,password,browser,ipaddress)
 
 	puts "first :Inside login"
 
 	# Go to the URL in browser
-	browser.goto "http://ec2-54-148-92-146.us-west-2.compute.amazonaws.com/wordpress/wp-login.php"
+         address ="http://ec2-" +ipaddress +".us-west-2.compute.amazonaws.com/wordpress/wp-login.php"
+
+	browser.goto(address)
 
 	puts "inside login  module  "
         puts user

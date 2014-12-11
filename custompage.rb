@@ -3,8 +3,10 @@ require "watir-webdriver"
 
 class Customp 
 
-def  initialize(browser)
-   browser.goto("http://ec2-54-148-92-146.us-west-2.compute.amazonaws.com/wordpress/wp-admin/customize.php");
+def  initialize(browser,ipaddress)
+    address ="http://ec2-" +ipaddress +".us-west-2.compute.amazonaws.com/wordpress/wp-admin/customize.php"
+   puts address
+   browser.goto(address);
 end
 
 def checktitle(browser)
