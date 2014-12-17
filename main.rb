@@ -12,7 +12,8 @@ puts "starting execution 2"
 # get the browser handler 
 browser= Login.init
 
-ipaddress = "54.68.197.195"
+# give the ip address with 0 in between 
+ipaddress = "54-68-197-195"
 
 # login to wordpress 
 
