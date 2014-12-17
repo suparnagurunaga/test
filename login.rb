@@ -8,7 +8,8 @@ module Login
 #  module to intialize broswer 
   def  self.init
 	puts "Inside initalize"
-        browser=Watir::Browser.new :firefox
+#        browser=Watir::Browser.new :firefox
+        browser=Watir::Browser.new :chrome
         return  browser
   
   end
