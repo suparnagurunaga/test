@@ -12,7 +12,7 @@ puts "starting execution 2"
 # get the browser handler 
 browser= Login.init
 
-ipaddress = "54-148-92-146"
+ipaddress = "54.68.197.195"
 
 # login to wordpress 
 
