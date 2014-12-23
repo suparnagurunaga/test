@@ -12,10 +12,18 @@ require "./login"
 require "./custompage"
 
 # Call the updates module to exercise all the funtions of the updates page 
-
 require "./updates"
 
-puts "Debugging 2 :  execution 2"
+
+# Call the setting module 
+require "./settings"
+
+
+
+puts "dddddddddddddddd"
+
+
+
 
 # get the browser handler 
 browser= Login.init
@@ -38,6 +46,14 @@ sleep(3)
 
 # browse through the updates tab and update details
 u=Updates.new(browser,ipaddress)
+u.pagehead(browser)
+u.selectplugin(browser)
+
+# Browse through the setting page
+s=Settings.new(browser,ipaddress)
+s.settitle(browser)
+s.defaultuserrole(browser)
+s.dateformat(browser)
 
 #browser.close
 Login.dest(browser)

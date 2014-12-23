@@ -3,8 +3,6 @@ require "watir-webdriver"
 
 
 # This page conntains all the fucntions of the Updates page which can be accessed by clicking on the Updates tab present in the left panel of the home page
-# This has checkbox element
-
 
 class  Updates
 
@@ -34,17 +32,4 @@ def pagehead(browser)
 	 end
 end
 
-
-# click on  select all checkbox to select the available plugin for update
-def selectplugin(browser)
-        browser.checkbox(:id, "plugins-select-all").set
-        sleep (5)
-end
-
-# clear the checkbox select all to unselect the plugins
-def deselectplugin(browser)
-        browser.checkbox(:id,"plugins-select-all").clear
 end 
-
-
-end
