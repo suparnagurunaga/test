@@ -29,7 +29,7 @@ puts "dddddddddddddddd"
 browser= Login.init
 
 # give the ip address with - in between 
-ipaddress = "54-68-197-195"
+ipaddress = "54-69-39-154"
 
 # login to wordpress 
 
