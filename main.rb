@@ -1,5 +1,6 @@
 require "rubygems"
 require "watir-webdriver"
+require 'minitest/autorun'
 
 
 puts "Debugging 1 : starting execution 1"
@@ -18,18 +19,10 @@ require "./updates"
 # Call the setting module 
 require "./settings"
 
-
-
-puts "dddddddddddddddd"
-
-
-
-
-# get the browser handler 
 browser= Login.init
 
 # give the ip address with - in between 
-ipaddress = "54-69-39-154"
+ipaddress = "54-68-135-148"
 
 # login to wordpress 
 
