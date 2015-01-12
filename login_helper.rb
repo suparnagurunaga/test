@@ -4,7 +4,7 @@ require 'minitest/spec'
 require 'minitest/autorun'
 #require 'minitest/reporters'
 #Minitest::Reporters.use!Minitest::Reporters::SpecReporter.new
-require 'ci/reporter/rake/test_unit_loader'
+#require 'ci/reporter/rake/test_unit_loader'
 
 
 
